@@ -9,6 +9,12 @@ namespace DataStructureImplementationCSharp
     {
       public  BSTNode root = null;
 
+        /// <summary>
+        /// Adding a Node in BST.
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public  static BSTNode AddNode(BSTNode root, int n)
         {
             BSTNode newNode = new BSTNode(n);
@@ -27,7 +33,11 @@ namespace DataStructureImplementationCSharp
             }
             return root;
         }
-
+        /// <summary>
+        /// Traverse the root Left 
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
         public  int Min(BSTNode root)
         {
             if(root == null)
